@@ -13,7 +13,7 @@ function AddTask() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const res = await fetch("https://app-api-sable.vercel.app/api/tasks/", {
+    const res = await fetch("http://localhost:5000/api/tasks/", {
       method: "POST",
       headers: {
         Authorization: `Bearer ${user.token}`,
