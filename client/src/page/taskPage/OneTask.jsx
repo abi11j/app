@@ -12,7 +12,7 @@ function OneTask() {
   const [isEdit, setIsEdit] = useState(false);
   const [isDel, setIsDel] = useState(false);
   const [task, setTask] = useState(null);
-  const url = "https://app-api-sable.vercel.app/api/tasks/" + id;
+  const url = "http://localhost:5000/api/tasks/" + id;
   const [isLoad, setIsLoad] = useState(false);
   useEffect(() => {
     const fetchTask = async () => {
