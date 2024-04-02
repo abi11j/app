@@ -7,7 +7,11 @@ const taskRoutes = require("./routes/task");
 const userRoutes = require("./routes/user");
 
 const app = express();
-app.use(cors());
+app.use(cors({
+  origin: ["https://app-client-coral.vercel.app/login"],
+  methods: ["POST", "GET", "PATCH", "DELETE"],
+  credentials: true
+}));
 app.use(express.json());
 
 app.use((req, res, next) => {
