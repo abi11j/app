@@ -9,7 +9,7 @@ function EditTask({ setIsEdit, task }) {
   const [status, setStatus] = useState(task.status);
   const [upTask, setUpTask] = useState(null);
   const opt = ["OPEN", "PROGRESS", "FINISH"];
-  const url = "http://localhost:5000/api/tasks/" + task._id;
+  const url = "https://app-api-sable.vercel.app/api/tasks/" + task._id;
 
   const handleExit = () => {
     setIsEdit(false);
