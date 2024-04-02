@@ -23,7 +23,7 @@ app.use("/api/tasks", taskRoutes);
 app.use("/api/user", userRoutes);
 app.get("/",(req, res)=>{
   res.send('backend');
-}
+})
 
 mongoose
   .connect(process.env.MONGO_URL)
