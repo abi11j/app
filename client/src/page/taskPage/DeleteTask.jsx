@@ -6,7 +6,7 @@ function DeleteTask({ setIsDel, task }) {
   const { user } = useAuthContext();
   const [delTask, setDelTask] = useState(null);
   const [isLoad, setIsLoad] = useState(false);
-  const url = "https://app-api-sable.vercel.app/api/tasks/" + task._id;
+  const url = "http://localhost:5000/api/tasks/" + task._id;
 
   const handleExit = () => {
     setIsDel(false);
