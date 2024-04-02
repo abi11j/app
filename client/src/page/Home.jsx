@@ -9,7 +9,7 @@ function Home() {
 
   useEffect(() => {
     const fetchTasks = async () => {
-      const response = await fetch("http://localhost:5000/api/tasks/count", {
+      const response = await fetch("https://app-api-sable.vercel.app/api/tasks/count", {
         headers: {
           Authorization: `Bearer ${user.token}`,
         },
