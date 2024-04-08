@@ -16,7 +16,7 @@ export const useSingup = () => {
       return;
     }
 
-    const res = await fetch("https://app-api-sable.vercel.app/api/user/singup", {
+    const res = await fetch("http://localhost:5000/api/user/singup", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ username, email, password }),
